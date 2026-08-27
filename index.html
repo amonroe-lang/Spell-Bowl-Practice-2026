@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Junior 2026 Spell Bowl Practice Hub</title>
+<style>
+  :root{
+    --navy:#0f2f63;
+    --gold:#f4b400;
+    --bg:#f4f7fb;
+    --card:#ffffff;
+    --text:#1f2937;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background:linear-gradient(135deg,#edf3ff,#fffaf0);
+    color:var(--text);
+  }
+  header{
+    background:var(--navy);
+    color:white;
+    text-align:center;
+    padding:34px 20px;
+    box-shadow:0 4px 14px rgba(0,0,0,.12);
+  }
+  header h1{
+    margin:0;
+    font-size:clamp(2rem,5vw,3.2rem);
+  }
+  header p{
+    margin:10px 0 0;
+    font-size:1.1rem;
+  }
+  .wrap{
+    max-width:1000px;
+    margin:0 auto;
+    padding:30px 20px 50px;
+  }
+  .intro{
+    text-align:center;
+    margin-bottom:24px;
+    font-size:1.08rem;
+  }
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:20px;
+  }
+  .card{
+    background:var(--card);
+    border-radius:18px;
+    padding:24px;
+    box-shadow:0 10px 28px rgba(0,0,0,.09);
+    border-top:7px solid var(--gold);
+  }
+  .card.full{
+    grid-column:1/-1;
+    border-top-color:var(--navy);
+  }
+  .card h2{
+    margin-top:0;
+    color:var(--navy);
+  }
+  .card p{
+    color:#4b5563;
+    line-height:1.5;
+  }
+  .btn{
+    display:inline-block;
+    text-decoration:none;
+    background:var(--navy);
+    color:white;
+    font-weight:800;
+    padding:13px 18px;
+    border-radius:12px;
+    margin-top:6px;
+  }
+  .btn:hover{filter:brightness(1.1)}
+  .modes{
+    margin-top:26px;
+    background:white;
+    border-radius:18px;
+    padding:22px;
+    box-shadow:0 8px 24px rgba(0,0,0,.07);
+  }
+  .modes h3{
+    margin-top:0;
+    color:var(--navy);
+    text-align:center;
+  }
+  .mode-list{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:10px;
+  }
+  .mode{
+    background:#f8fafc;
+    border-radius:12px;
+    padding:12px 8px;
+    text-align:center;
+    font-size:.93rem;
+  }
+  footer{
+    text-align:center;
+    color:#6b7280;
+    padding-top:28px;
+    font-size:.92rem;
+  }
+  @media (max-width:760px){
+    .grid{grid-template-columns:1fr}
+    .card.full{grid-column:auto}
+    .mode-list{grid-template-columns:1fr 1fr}
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>🏆 Junior 2026 Spell Bowl Practice Hub</h1>
+  <p>Choose a word set and start practicing!</p>
+</header>
+
+<div class="wrap">
+  <div class="intro">
+    Each game includes spoken words, instant feedback, scoring, missed-word review,
+    and multiple game modes.
+  </div>
+
+  <div class="grid">
+    <section class="card full">
+      <h2>Full Word List</h2>
+      <p>Practice from the complete Junior 2026 Spell Bowl list.</p>
+      <a class="btn" href="Junior_2026_Spell_Bowl_Practice.html">Play Full List</a>
+    </section>
+
+    <section class="card">
+      <h2>Words 1–350</h2>
+      <p>Focus on the first section of the list.</p>
+      <a class="btn" href="spell_bowl_words_1_350.html">Play Words 1–350</a>
+    </section>
+
+    <section class="card">
+      <h2>Words 351–700</h2>
+      <p>Practice the second section of the list.</p>
+      <a class="btn" href="spell_bowl_words_351_700.html">Play Words 351–700</a>
+    </section>
+
+    <section class="card">
+      <h2>Words 700–1100</h2>
+      <p>Practice the middle-to-late section of the list.</p>
+      <a class="btn" href="spell_bowl_words_700_1100.html">Play Words 700–1100</a>
+    </section>
+
+    <section class="card">
+      <h2>Words 1101–1413</h2>
+      <p>Finish strong with the final section of the list.</p>
+      <a class="btn" href="spell_bowl_words_1101_1413.html">Play Words 1101–1413</a>
+    </section>
+  </div>
+
+  <section class="modes">
+    <h3>🎮 Game Modes</h3>
+    <div class="mode-list">
+      <div class="mode">🎯<br><strong>Practice</strong><br>Unlimited random words</div>
+      <div class="mode">🏅<br><strong>9-Word Challenge</strong><br>Competition-style round</div>
+      <div class="mode">⚡<br><strong>Lightning</strong><br>60-second challenge</div>
+      <div class="mode">🔥<br><strong>Streak</strong><br>Keep your streak alive</div>
+      <div class="mode">🔁<br><strong>Missed Words</strong><br>Review mistakes</div>
+    </div>
+  </section>
+
+  <footer>
+    Junior 2026 Spell Bowl Practice
+  </footer>
+</div>
+</body>
+</html>
